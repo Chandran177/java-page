@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login360</title>
+    <link rel="stylesheet" href="./Login360.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!--NAVIGATION BAR-->
+
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="loginlogo.png" alt="login logo" width="150" />
+      </div>
+
+      <!-- Contact + Button -->
+      <div class="contact">
+        <span><i class="fa-solid fa-phone"></i> +91 93459 70285</span>
+        <span><i class="fa-solid fa-envelope"></i>: hr@login360.in</span>
+        <a href="#javafullstack" class="btn1">Enroll Now</a>
+      </div>
+    </nav>
+
+    <!-- === POPUP FORM === -->
+    <div id="enrollPopup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closeEnrollPopup()">&times;</span>
+        <h2>Register Now</h2>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter Your Name" />
+
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter Phone Number" />
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter Your Email" />
+
+        <button class="submit">Submit</button>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="hero">
+      <!-- Left -->
+
+      <div class="hero-left">
+        <div class="offer">🚀 Limited Time: 30% Off Early Bird Pricing</div>
+        <h1>Become a Java <br class="dis"/> <span>Full Stack</span>  <br class="brdisplay" />  Developer <span class="offer-span">in 3 Months </span></h1>
+        <p>
+          Master Java Full Stack Development with real-time projects, hands-on
+          practice, and 100% placement support from industry experts.
+        </p>
+
+        <div class="buttons">
+          <a href="#javafullstack">
+            <button class="btn-orange">Start Learning Today</button></a
+          >
+          <a href="#javafullstack">
+            <button class="btn-outline">Download Free Curriculum</button></a
+          >
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <i class="fa-regular fa-clock"></i>
+            <strong>3</strong>
+            <span>Months-Complete Training</span>
+          </div>
+          <div class="stat">
+            <i class="fa-solid fa-user-group"></i>
+            <strong>30</strong>
+            <span>Students Only – Focused Batch</span>
+          </div>
+          <div class="stat">
+            <i class="fa-solid fa-award"></i>
+            <strong>100%</strong>
+            <span
+              >Placement <br />
+              Support</span
+            >
+          </div>
+          <div class="stat">
+            <i class="fa-solid fa-headset"></i>
+            <strong>24/7</strong>
+            <span
+              >Doubt <br />
+              Support</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div id="javafullstack" class="form-container">
+        <form class="pro-form" id="sheetForm">
+          <h2>Enrollment Form</h2>
+
+          <label>Full Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Name"
+            required
+          />
+
+          <label>Phone Number</label>
+          <input
+            type="number"
+            name="phone"
+            placeholder="Enter Your Phone Number"
+            required
+          />
+
+          <label>Location</label>
+          <input
+            type="text"
+            name="location"
+            placeholder="Enter Your Location"
+            required
+          />
+
+          <label>Preferred Batch</label>
+          <select name="batch" required>
+            <option value="">-- Select Batch --</option>
+            <option>Weekdays</option>
+            <option>Weekends</option>
+            <option>Online</option>
+          </select>
+
+          <!-- CAPTCHA -->
+          <!-- <label>Enter Captcha</label>
+          <div class="captcha-box">
+            <span id="captchaText" class="captcha-text"></span>
+            <button type="button" id="refreshCaptcha" class="refresh-btn">
+              ↻
+            </button>
+          </div>
+
+          <input
+            type="text"
+            id="captchaInput"
+            placeholder="Enter Captcha"
+            required
+          />
+
+          <p id="captchaError">Captcha does not match!</p> -->
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!--second page Why Choose us-->
+    <div class="second">
+      <div class="why">
+        <h1><b>Why Students, Freshers, and Professionals Trust Login360 for IT Training?</b></h1>
+        <p>
+          We don’t just teach Java Fullstack — we build IT careers. Here’s why
+          students across Chennai trust us for Full Stack training.
+        </p>
+      </div>
+      <div class="grid">
+        <div class="icon-circle">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h4><b>100% Placement Support</b></h4>
+          <p>
+            Get guaranteed placement assistance until you get placed. Our
+            students are now working in top IT companies across Chennai &
+            Bangalore.
+          </p>
+        </div>
+
+        <div class="icon-circle">
+          <i class="fa-solid fa-clock"></i>
+          <h4><b>Experienced IT Trainers</b></h4>
+          <p>
+            Our trainers are industry experts who teach you both the theory and
+            real-world skills you need for a successful career.
+          </p>
+        </div>
+
+        <div class="icon-circle">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <h4><b>Flexible Batch Timings</b></h4>
+          <p>
+            Choose weekday / weekend / online / offline batches based on your
+            convenience. Perfect for college students, working professionals,
+            and freshers.
+          </p>
+        </div>
+
+        <div class="icon-circle">
+          <i class="fa-solid fa-book"></i>
+          <h4><b>High Salary Potential</b></h4>
+          <p>
+            Our Java Full Stack students secure competitive salary packages with
+            multiple job opportunities across MNCs and startups.
+          </p>
+        </div>
+
+        <div class="icon-circle">
+          <i class="fa-solid fa-briefcase"></i>
+          <h4><b>Affordable Fee Structuree</b></h4>
+          <p>
+            We believe quality education should be affordable. Our course is
+            just ₹19,999, including placement support — no hidden charges.
+          </p>
+        </div>
+
+        <div class="icon-circle">
+          <i class="fa-solid fa-phone"></i>
+          <h4><b>Dedicated Career Support</b></h4>
+          <p>
+            Complete guidance from training till placement — HR support, job
+            notifications, interview guidance, and continuous follow-up.
+          </p>
+        </div>
+      </div>
+
+      <!--Book For Free consultation-->
+      <div class="book">
+        <div class="free">
+          <h3><b>Need Help Choosing the Right Course?</b></h3>
+          <p>
+            Book a free consultation with our expert mentor. We’ll understand
+            your background, discuss your career goals, and guide you with the
+            right learning path to start your IT journey.
+          </p>
+          <a href="#javafullstack">
+            <button class="btn1">Book Free Consultation →</button></a
+          >
+        </div>
+      </div>
+
+      <!--CIRCULUM-->
+      <div class="cir">
+        <div>
+          <h1><b>Java Full Stack Development – Curriculum Overview</b></h1>
+          <p>
+            Our industry-designed curriculum covers everything you need to
+            become a full-stack Java developer, from fundamentals to advanced
+            enterprise applications.
+          </p>
+        </div>
+        <div class="container">
+          <!-- Card 1 -->
+          <div class="course-card">
+            <div class="icon-box">📘</div>
+            <div class="course-content">
+              <h3>1. Core Java Programming</h3>
+              <p class="duration">4 weeks</p>
+              <ul>
+                <li>Java basics, variables, loops, functions</li>
+                <li>OOP concepts (Class, Object, Inheritance, Polymorphism)</li>
+                <li>Exception handling & file handling</li>
+                <li>Collections & Generics</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="course-card">
+            <div class="icon-box">🗄️</div>
+            <div class="course-content">
+              <h3>2. Database & SQL</h3>
+              <p class="duration">6 weeks</p>
+              <ul>
+                <li>MySQL database operations</li>
+                <li>CRUD operations, joins, subqueries</li>
+                <li>Writing optimized queries for real-time use</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="course-card">
+            <div class="icon-box">🌐</div>
+            <div class="course-content">
+              <h3>3. Frontend Development</h3>
+              <p class="duration">6 weeks</p>
+              <ul>
+                <li>HTML5, CSS3, Bootstrap</li>
+                <li>JavaScript fundamentals</li>
+                <li>DOM manipulation & ES6 features</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="course-card">
+            <div class="icon-box">🗄️</div>
+            <div class="course-content">
+              <h3>4. Backend Development with Java</h3>
+              <p class="duration">6 weeks</p>
+              <ul>
+                <li>Advanced Java</li>
+                <li>Servlets & JSP</li>
+                <li>MVC architecture</li>
+                <li>Web application development</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="course-card">
+            <div class="icon-box">🗄️</div>
+            <div class="course-content">
+              <h3>5. Spring Framework</h3>
+              <p class="duration">6 weeks</p>
+              <ul>
+                <li>Spring Core & Spring MVC</li>
+                <li>Spring Boot project development</li>
+                <li>REST API creation</li>
+                <li>Dependency Injection (DI) & Annotations</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="course-card">
+            <div class="icon-box">🗄️</div>
+            <div class="course-content">
+              <h3>6. Full Stack Project (Realtime)</h3>
+              <p class="duration">6 weeks</p>
+              <ul>
+                <li>Frontend + Backend integrated</li>
+                <li>Database-driven application</li>
+                <li>Deployment guidance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Upcomming Batches-->
+      <div class="up">
+        <div class="cent">
+          <h1><b>Upcoming Batch Sessions</b></h1>
+          <p>
+            Choose the batch that fits your schedule. All batches follow the
+            same industry-aligned curriculum, handled by expert trainers, with
+            100% placement support.
+          </p>
+        </div>
+
+        <!--Batches-->
+        <div class="batch">
+          <!-- Batch 1 -->
+          <div class="card">
+            <div class="badge">Filling Fast</div>
+
+            <h2>Weekdays Intensive Batch</h2>
+
+            <div class="info">
+              <p>📅 Starts: December 5, 2025</p>
+              <p>⏰ Mon–Fri | 3 Hours per Day</p>
+              <p>💻 Offline (Velachery – Chennai / Coimbatore)</p>
+            </div>
+
+            <div class="progress-section">
+              <p class="progress-text">
+                Batch Progress: <span>12/20 Enrolled</span>
+              </p>
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <div class="instructor">
+              <p class="name">What You Get</p>
+            </div>
+
+            <div class="highlights">
+              <p>Daily hands-on coding</p>
+              <p>Real-time project training</p>
+              <p>Assignments + weekly assessments</p>
+              <p>In-depth doubt clearing</p>
+              <p>Portfolio building</p>
+              <p>Build 3+ real-time applications</p>
+              <p>Resume + interview preparation</p>
+            </div>
+
+            <div class="pricing">
+              <p class="price">Fees: <span class="old-price">₹19,999</span></p>
+              <p class="duration">Duration: 3 Months</p>
+            </div>
+
+            <a href="#hero"><button class="reserve-btn">Enroll Now</button></a>
+          </div>
+
+          <!-- Batch 2 -->
+          <div class="card">
+            <div class="badge">New</div>
+
+            <h2>Weekend Intensive Batch</h2>
+
+            <div class="info">
+              <p>📅 Starts: December 6, 2025</p>
+              <p>⏰ Sat–Sun | 6 Hours per Day</p>
+              <p>💻 Offline (Velachery – Chennai / Coimbatore)</p>
+            </div>
+
+            <div class="progress-section">
+              <p class="progress-text">
+                Batch Progress: <span>12/15 Enrolled</span>
+              </p>
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <div class="instructor">
+              <p class="name">What You Get</p>
+            </div>
+
+            <div class="highlights">
+              <p>Perfect for working professionals</p>
+              <p>Full-day practical sessions</p>
+              <p>In-depth doubt clearing</p>
+              <p>Portfolio building</p>
+              <p>Build 3+ real-time applications</p>
+              <p>Resume + interview preparation</p>
+              <p>Guaranteed placement support</p>
+            </div>
+
+            <div class="pricing">
+              <p class="price">Fees: <span class="old-price">₹19,999</span></p>
+              <p class="duration">Duration: 3 Months</p>
+            </div>
+
+            <a href="#hero"><button class="reserve-btn">Enroll Now</button></a>
+          </div>
+
+          <!-- Batch 3 -->
+          <div class="card">
+            <div class="badge">Limited Seats</div>
+
+            <h2>Online Live Batch</h2>
+
+            <div class="info">
+              <p>📅 Starts: December 5, 2025</p>
+              <p>⏰ Mon–Fri | 3 Hours per Day</p>
+              <p>🏢 100% Online Live Training</p>
+            </div>
+
+            <div class="progress-section" id="pricing">
+              <p class="progress-text">
+                Batch Progress: <span>8/25 Enrolled</span>
+              </p>
+              <div class="progress-bar">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <div class="instructor">
+              <p class="name">What You Get</p>
+            </div>
+
+            <div class="highlights">
+              <p>Live interactive classes</p>
+              <p>Daily coding tasks</p>
+              <p>Recorded session access</p>
+              <p>Build 3+ real-time applications</p>
+              <p>Portfolio building</p>
+              <p>Resume + interview preparation</p>
+              <p>Guaranteed placement support</p>
+            </div>
+
+            <div class="pricing" id="pricebut3">
+              <p class="price">Fees: <span class="old-price">₹19,999</span></p>
+              <p class="duration">Duration: 3 Months</p>
+            </div>
+
+            <a href="#hero">
+              <button class="reserve-btn" id="enrollNowBtn">
+                Enroll Now
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--PLACEMENT PROCESS-->
+      <section class="placement-section">
+        <h2>Our Placement Process</h2>
+        <p>
+          We don’t just teach you to code — we prepare you for a successful IT
+          career. Our proven training + placement system has helped thousands of
+          students secure jobs in leading companies.
+        </p>
+
+        <div class="placement-boxes">
+          <div class="box">
+            <div class="icon"><i class="fas fa-user-graduate"></i></div>
+            <h3>2,500+</h3>
+            <p>Students Placed in top companies</p>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-chart-line"></i></div>
+            <h3>95%</h3>
+            <p>Placement Rate within 6 months</p>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-dollar-sign"></i></div>
+            <h3>&#8377; 3 to 4 LPA</h3>
+            <p>Average Starting Salary for Graduates</p>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-building"></i></div>
+            <h3>200+</h3>
+            <p>Partner Companies hiring our students</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="contain">
+        <!-- Card 1 -->
+        <div class="cards">
+          <div class="card-header">
+            <div class="circle">1</div>
+            <div class="ooo">
+              <div class="card-title">
+                Skill Training – Foundation → Advanced
+              </div>
+            </div>
+          </div>
+          <div class="timeline">
+            <strong>Timeline</strong>
+            <ul>
+              <li>Learn core programming concepts (Java Full Stack)</li>
+              <li>
+                Advanced frameworks & tools (Spring Boot, Hibernate,
+                Angular/React)
+              </li>
+              <li>Real-time projects for hands-on experience</li>
+              <li>Problem-solving & coding challenges</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="cards">
+          <div class="card-header">
+            <div class="circle">2</div>
+            <div class="ooo">
+              <div class="card-title">Portfolio & Project Building</div>
+            </div>
+          </div>
+          <div class="timeline">
+            <strong>Timeline</strong>
+            <ul>
+              <li>Build industry-ready projects</li>
+              <li>GitHub portfolio setup</li>
+              <li>Document technical skills & project workfl ow</li>
+              <li>Showcase projects for interviews</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="cards">
+          <div class="card-header">
+            <div class="circle">3</div>
+            <div class="ooo">
+              <div class="card-title">Mock Interviews & HR Training</div>
+            </div>
+          </div>
+          <div class="timeline">
+            <strong>Timeline</strong>
+            <ul>
+              <li>Mock technical interviews with experienced trainers</li>
+              <li>HR interview preparation & common questions</li>
+              <li>Communication & presentation skill practice</li>
+              <li>Feedback and performance improvement</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="cards">
+          <div class="card-header">
+            <div class="circle">4</div>
+            <div class="ooo">
+              <div class="card-title">Placement Assistance</div>
+            </div>
+          </div>
+          <div class="timeline">
+            <strong>Timeline</strong>
+            <ul>
+              <li>Job application strategy guidance</li>
+              <li>Networking on LinkedIn & job portals</li>
+              <li>Resume & LinkedIn profile finalization</li>
+              <li>Company-specific interview preparation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--PLACEMENTS RECORDS VIDEOS-->
+      <div class="carousel">
+        <h1>
+          <b>OUR STUDENTS REVIEW</b>
+        </h1>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <video src="./review1.mp4" controls muted></video>
+            <video src="./review6.mp4" controls muted></video>
+            <video src="./review2.mp4" controls muted></video>
+          </div>
+          <div class="carousel-item">
+            <video src="./review7.mp4" controls muted></video>
+            <video src="./review4.mp4" controls muted></video>
+            <video src="./review8.mp4" controls muted></video>
+          </div>
+        </div>
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+
+      <!--Comprehensive Placements Support-->
+      <div class="placements">
+        <div class="comp">
+          <h1>Comprehensive Placements Support</h1>
+        </div>
+        <div class="su">
+          <div class="support">
+            <div class="sup">
+              <h2><b>Dedicated Placement Team</b></h2>
+              <p>
+                Our experienced placement team works exclusively on student job
+                placements
+              </p>
+              <ul>
+                <li>Personal placement coordinator assigned</li>
+                <li>Weekly progress tracking</li>
+                <li>Industry connections and networking.</li>
+                <li>Continuous market research.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="support">
+            <div class="sup">
+              <h2><b>Industry Partnerships</b></h2>
+              <p>
+                Strong relationships with 200+ companies actively hiring Java
+                developers
+              </p>
+              <ul>
+                <li>Direct hiring partnerships</li>
+                <li>Exclusive job opportunities</li>
+                <li>Fast-track interview processes</li>
+                <li>Bulk hiring drives</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="support">
+            <div class="sup">
+              <h2><b>Lifetime Career Support</b></h2>
+              <p>
+                Our support doesn't end with your first job - we're here for
+                your entire career
+              </p>
+              <ul>
+                <li>Career advancement guidance</li>
+                <li>Job change assistance</li>
+                <li>Skill upgrade recommendations</li>
+                <li>Alumni network access</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Oue Hiring Patners-->
+      <div class="partners-container">
+        <h2>Our Hiring Partners</h2>
+        <p class="subtitle">
+          We have direct partnerships with 200+ companies actively hiring Java
+          developers
+        </p>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-track">
+            <div class="logo-box">Google</div>
+            <div class="logo-box">Amazon</div>
+            <div class="logo-box">Microsoft</div>
+            <div class="logo-box">Netflix</div>
+            <div class="logo-box">Uber</div>
+            <div class="logo-box">Airbnb</div>
+            <div class="logo-box">Salesforce</div>
+            <div class="logo-box">Oracle</div>
+            <div class="logo-box">IBM</div>
+            <div class="logo-box">Accenture</div>
+            <div class="logo-box">TCS</div>
+            <div class="logo-box">Infosys</div>
+            <div class="logo-box">Wipro</div>
+            <div class="logo-box">Cognizant</div>
+            <div class="logo-box">HCL</div>
+            <div class="logo-box">Mahindra</div>
+            <div class="logo-box">Capgemini</div>
+            <div class="logo-box">Deloitte</div>
+          </div>
+        </div>
+      </div>
+
+      <!--100% placements support-->
+      <section class="placement-banner">
+        <div class="banner-box">
+          <h2>100% Placement Assistance</h2>
+          <p>
+            We’re confident in our placement process and provide job placement
+            assistance until you land your first role.
+          </p>
+          <div class="banner-buttons">
+            <a href="#hero" class="btn-start">Start Your Journey Today →</a>
+            <a href="#hero" class="btn-report">Enroll Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!--FREQUENTLY ASKED QUESTION-->
+      <section class="faq-section">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <p class="faq-desc">
+          Got questions? We've got answers. Here are the most common questions
+          about our program.
+        </p>
+
+        <div class="faq-box">
+          <details open>
+            <summary>
+              1. What is the duration of the Java Full Stack course?
+            </summary>
+            <p>
+              The course duration is 3–4 months, including real-time projects
+              and placement training.
+            </p>
+          </details>
+
+          <details>
+            <summary>2. Do you provide 100% placement assistance?</summary>
+            <p>
+              Yes. We offer complete placement support until you land your first
+              job.
+            </p>
+          </details>
+
+          <details>
+            <summary>3. Who can join this course?</summary>
+            <p>
+              Any degree or diploma student, fresher, or working professional
+              can join. No prior coding knowledge required.
+            </p>
+          </details>
+
+          <details>
+            <summary>4. Will I work on real-time projects?</summary>
+            <p>
+              Yes. You will build industry-level projects, upload them to
+              GitHub, and develop a strong portfolio.
+            </p>
+          </details>
+
+          <details>
+            <summary>5. Are classes available offline and online?</summary>
+            <p>
+              Yes. We offer both online & offline classes in Chennai &
+              Coimbatore.
+            </p>
+          </details>
+
+          <details>
+            <summary>6. What is the fee structure?</summary>
+            <p>
+              We offer affordable fees. The detailed fee breakdown will be
+              shared when you enquire.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              7. What job roles can I apply for after completion?
+            </summary>
+            <p>You can apply for roles such as:</p>
+            <ul>
+              <li>Java Full Stack Developer</li>
+              <li>Software Engineer</li>
+              <li>Backend / Frontend Developer</li>
+              <li>Web Developer</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>8. Do you offer interview preparation?</summary>
+            <p>
+              Yes. We provide mock interviews, HR training, aptitude support,
+              and resume building.
+            </p>
+          </details>
+
+          <details>
+            <summary>9. Will I receive certificates after the course?</summary>
+            <p>Yes. You will receive course completion certificates.</p>
+          </details>
+
+          <details>
+            <summary>10. How do I enroll?</summary>
+            <p>
+              Click “Start Your Journey Today →” and submit your details. Our
+              team will contact you immediately.
+            </p>
+          </details>
+        </div>
+      </section>
+    </div>
+    <script src="./js.js"></script>
+
+    <script>
+      const wrappers = document.querySelectorAll(".video-wrapper");
+
+      wrappers.forEach((wrapper) => {
+        const video = wrapper.querySelector("video");
+        const btn = wrapper.querySelector(".play-btn");
+
+        btn.addEventListener("click", () => {
+          video.play();
+          btn.style.display = "none"; // hide button
+        });
+
+        video.addEventListener("ended", () => {
+          btn.style.display = "block"; // show again when finished
+        });
+      });
+    </script>
+  </body>
+</html>
