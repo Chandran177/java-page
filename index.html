@@ -18,6 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="./index.css"> -->
   </head>
 
   <body>
@@ -32,7 +33,7 @@
       <!-- Contact + Button -->
       <div class="contact">
         <span><i class="fa-solid fa-phone"></i> +91 93459 70285</span>
-        <span><i class="fa-solid fa-envelope"></i>: hr@login360.in</span>
+        <span><i class="fa-solid fa-envelope"></i> : hr@login360.in</span>
         <a href="#javafullstack" class="btn1">Enroll Now</a>
       </div>
     </nav>
@@ -62,7 +63,10 @@
 
       <div class="hero-left">
         <div class="offer">🚀 Limited Time: 30% Off Early Bird Pricing</div>
-        <h1>Become a Java <br class="dis"/> <span>Full Stack</span>  <br class="brdisplay" />  Developer <span class="offer-span">in 3 Months </span></h1>
+        <h1>
+          Become a Java <span>Full Stack</span> Developer
+          <span class="offer-span">in 3 Months </span>
+        </h1>
         <p>
           Master Java Full Stack Development with real-time projects, hands-on
           practice, and 100% placement support from industry experts.
@@ -70,10 +74,12 @@
 
         <div class="buttons">
           <a href="#javafullstack">
-            <button class="btn-orange">Start Learning Today</button></a
+            <button class="btn-orange hero-btn">Start Learning Today</button></a
           >
           <a href="#javafullstack">
-            <button class="btn-outline">Download Free Curriculum</button></a
+            <button class="btn-outline hero-btn">
+              Download Free Curriculum
+            </button></a
           >
         </div>
 
@@ -91,18 +97,12 @@
           <div class="stat">
             <i class="fa-solid fa-award"></i>
             <strong>100%</strong>
-            <span
-              >Placement <br />
-              Support</span
-            >
+            <span>Placement Support</span>
           </div>
           <div class="stat">
             <i class="fa-solid fa-headset"></i>
             <strong>24/7</strong>
-            <span
-              >Doubt <br />
-              Support</span
-            >
+            <span>Doubt Support</span>
           </div>
         </div>
       </div>
@@ -112,38 +112,42 @@
         <form class="pro-form" id="sheetForm">
           <h2>Enrollment Form</h2>
 
-          <label>Full Name</label>
-          <input
-            type="text"
-            name="name"
-            placeholder="Enter Your Name"
-            required
-          />
-
-          <label>Phone Number</label>
-          <input
-            type="number"
-            name="phone"
-            placeholder="Enter Your Phone Number"
-            required
-          />
-
-          <label>Location</label>
-          <input
-            type="text"
-            name="location"
-            placeholder="Enter Your Location"
-            required
-          />
-
-          <label>Preferred Batch</label>
-          <select name="batch" required>
-            <option value="">-- Select Batch --</option>
-            <option>Weekdays</option>
-            <option>Weekends</option>
-            <option>Online</option>
-          </select>
-
+          <div>
+            <label>Full Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div>
+            <label>Phone Number</label>
+            <input
+              type="number"
+              name="phone"
+              placeholder="Enter Your Phone Number"
+              required
+            />
+          </div>
+          <div>
+            <label>Location</label>
+            <input
+              type="text"
+              name="location"
+              placeholder="Enter Your Location"
+              required
+            />
+          </div>
+          <div>
+            <label>Preferred Batch</label>
+            <select name="batch" required>
+              <option value="">-- Select Batch --</option>
+              <option>Weekdays</option>
+              <option>Weekends</option>
+              <option>Online</option>
+            </select>
+          </div>
           <!-- CAPTCHA -->
           <!-- <label>Enter Captcha</label>
           <div class="captcha-box">
@@ -170,7 +174,12 @@
     <!--second page Why Choose us-->
     <div class="second">
       <div class="why">
-        <h1><b>Why Students, Freshers, and Professionals Trust Login360 for IT Training?</b></h1>
+        <h1>
+          <b
+            >Why Students, Freshers, and Professionals Trust Login360 for IT
+            Training?</b
+          >
+        </h1>
         <p>
           We don’t just teach Java Fullstack — we build IT careers. Here’s why
           students across Chennai trust us for Full Stack training.
@@ -536,7 +545,7 @@
             <div class="circle">1</div>
             <div class="ooo">
               <div class="card-title">
-                Skill Training – Foundation → Advanced
+                Skill Training Foundation
               </div>
             </div>
           </div>
@@ -628,6 +637,9 @@
             <video src="./review4.mp4" controls muted></video>
             <video src="./review8.mp4" controls muted></video>
           </div>
+          <div class="carousel-item">
+            <video src="./review1.mp4" controls muted></video>
+          </div>
         </div>
 
         <button class="prev">&#10094;</button>
@@ -700,24 +712,97 @@
 
         <div class="carousel-wrapper">
           <div class="carousel-track">
-            <div class="logo-box">Google</div>
-            <div class="logo-box">Amazon</div>
-            <div class="logo-box">Microsoft</div>
-            <div class="logo-box">Netflix</div>
-            <div class="logo-box">Uber</div>
-            <div class="logo-box">Airbnb</div>
-            <div class="logo-box">Salesforce</div>
-            <div class="logo-box">Oracle</div>
-            <div class="logo-box">IBM</div>
-            <div class="logo-box">Accenture</div>
-            <div class="logo-box">TCS</div>
-            <div class="logo-box">Infosys</div>
-            <div class="logo-box">Wipro</div>
-            <div class="logo-box">Cognizant</div>
-            <div class="logo-box">HCL</div>
-            <div class="logo-box">Mahindra</div>
-            <div class="logo-box">Capgemini</div>
-            <div class="logo-box">Deloitte</div>
+            <!-- LOGOS (SET 1) -->
+            <div class="logo-box">
+              <img src="./logo/ailaysa.png" alt="" />
+            </div>
+            <div class="logo-box"><img src="./logo/arex.png" alt="" /></div>
+            <div class="logo-box">
+              <img src="./logo/cafsinfotech-1.png" alt="" />
+            </div>
+            <div class="logo-box"><img src="./logo/skyx.png" alt="" /></div>
+            <div class="logo-box">
+              <img src="./logo/DHL_Group_logo_rgb_BG.svg" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/dimension.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/download.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/go-vav_02.webp" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/Untitled design.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/honolulu.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/image 770.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/logo-home-page.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/imuii.png" alt="" />
+            </div>
+            <div class="logo-box"><img src="./logo/ivi.png" alt="" /></div>
+            <div class="logo-box"><img src="./logo/kkr.png" alt="" /></div>
+            <div class="logo-box">
+              <img src="./logo/kriha.png" alt="" />
+            </div>
+            <div class="logo-box"><img src="./logo/LEAD.png" alt="" /></div>
+            <div class="logo-box">
+              <img src="./logo/logo-home-page.png" alt="" />
+            </div>
+
+            <!-- LOGOS (SET 2 – DUPLICATE FOR INFINITE LOOP) -->
+            <div class="logo-box">
+              <img src="./logo/ailaysa.png" alt="" />
+            </div>
+            <div class="logo-box"><img src="./logo/arex.png" alt="" /></div>
+            <div class="logo-box">
+              <img src="./logo/cafsinfotech-1.png" alt="" />
+            </div>
+            <div class="logo-box"><img src="./logo/skyx.png" alt="" /></div>
+            <div class="logo-box">
+              <img src="./logo/DHL_Group_logo_rgb_BG.svg" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/dimension.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/download.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/go-vav_02.webp" alt="" />
+            </div>
+            <div class="logo-box">
+             <img src="./logo/Untitled design.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/honolulu.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/image 770.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/logo-home-page.png" alt="" />
+            </div>
+            <div class="logo-box">
+              <img src="./logo/imuii.png" alt="" />
+            </div>
+            <div class="logo-box"><img src="./logo/ivi.png" alt="" /></div>
+            <div class="logo-box"><img src="./logo/kkr.png" alt="" /></div>
+            <div class="logo-box">
+              <img src="./logo/kriha.png" alt="" />
+            </div>
+            <div class="logo-box"><img src="./logo/LEAD.png" alt="" /></div>
+            <div class="logo-box">
+              <img src="./logo/logo-home-page.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -746,7 +831,7 @@
         </p>
 
         <div class="faq-box">
-          <details open>
+          <details>
             <summary>
               1. What is the duration of the Java Full Stack course?
             </summary>

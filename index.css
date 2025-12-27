@@ -1,0 +1,99 @@
+@import "./root.css";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background: var(--bg-form);
+  box-shadow: var(--shadow-md);
+}
+.contact {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: var(--fs-14);
+  color: var(--dark-n);
+}
+.btn1 {
+  background: var(--btn-blue);
+  color: var(--light);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.hero {
+  min-height: calc(100vh - 55px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+  /* background: linear-gradient(to right, #E68415, #F79520); */
+ /* background: linear-gradient(to right, #C96A00, #F79520); */
+  background: linear-gradient(to left, #fad7a0, #f79520);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.hero-left {
+  max-width: 60%;
+}
+.offer {
+  background:var(--btn-blue);
+  width: fit-content;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: var(--fs-14);
+  margin-bottom: 15px;
+  color: var(--bg-form);
+}
+.form-container {
+    width: 40%;
+    background:var(--bg-form);
+    padding: 3%;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md)
+}
+.hero-left h1 {
+  font-size: var(--fs-40);
+  font-weight: bold;
+  margin: 10px 0;
+  color:var(--bg-form);
+}
+
+.hero-left h1 span {
+  color:var(--btn-blue);
+}
+
+.hero-left p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color:var(--bg-form);
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.btn-orange {
+  background: var();
+  padding: 14px 28px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  padding: 14px 28px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
